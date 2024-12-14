@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
-}
+/* App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282c34;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
   }
-  to {
-    transform: rotate(360deg);
+  
+  header ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
   }
-}
+  
+  header li {
+    transition: all 0.3s ease;
+  }
+  
+  header li:hover {
+    transform: scale(1.1);
+  }
+  
+  header a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  h1 {
+    color: #1e40af;
+  }
+  
+  h3 {
+    color: #1f2937;
+  }
+  
+  .text-gray-600 {
+    color: #6b7280;
+  }
+  
+  .button-primary {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .button-primary:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .grid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 2rem;
+  }
+  
+  .card {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card iframe {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    color: #1e40af;
+  }
+  
+  .card-text {
+    margin: 0.5rem 0;
+  }
+  
+  .footer {
+    text-align: center;
+    background-color: #1f2937;
+    color: white;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+  }
+  
